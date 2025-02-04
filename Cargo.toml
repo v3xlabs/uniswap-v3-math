@@ -11,6 +11,10 @@ keywords = ["uniswapV3", "math"]
 exclude = ["target/*", ".github/*", ".gitignore", "Uniswap/*"]
 
 [dependencies]
-alloy = { version = "0.9", features = ["contract", "providers"] }
+alloy = { version = "0.9", features = [
+    "contract",
+    "providers",
+    "reqwest-rustls-tls"
+], default-features = false }
 eyre = "0.6"
 thiserror = "2.0"
